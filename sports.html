@@ -6,6 +6,21 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  	<!-- jQuery library (served from Google) -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<!-- bxSlider Javascript file -->
+	<script src="jquery.bxslider.min.js"></script>
+	<!-- bxSlider CSS file -->
+	<link href="jquery.bxslider.css" rel="stylesheet" />
+	<style type="text/css">
+		.slideshow {
+			max-width: 600px;
+			margin: 0 auto;
+		}
+		.slideshow ul {
+			margin:0;
+		}
+	</style>
 </head>
 <body>
   <nav>
@@ -52,5 +67,28 @@ buy tickets for games, latest news, roster and many more!</p>
   </tr>
 </table>
 </div>
+<div class="slideshow">
+		<ul class="bxslider">
+			<li><img src="images/bears_field2.jpg" alt="bears_field2"/></li>
+			<li><img src="images/bears_sign.jpg" alt="bears_sign"/></li>
+			<li><img src="images/bears_stadium.jpg" alt="bears_stadium"/></li>
+			<li><img src="images/blackh_game.jpg" alt="blackh_game"/></li>
+			<li><img src="images/bulls_game.jpg" alt="bulls_game"/></li>
+			<li><img src="images/bulls_sign.jpg" alt="bulls_sign"/></li>
+			<li><img src="images/cubs_field.jpg" alt="cubs_field"/></li>
+			<li><img src="images/cubs_field2.jpg" alt="cubs_field2"/></li>
+			<li><img src="images/cubs_field3.jpg" alt="cubs_field3"/></li>
+			<li><img src="images/field_bears.jpg" alt="field_bears"/></li>
+			<li><img src="images/overview_bulls.jpg" alt="overveiw_bulls"/></li>
+			<li><img src="images/stadium_bulls.jpg" alt="stadium_bulls"/></li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.bxslider').bxSlider({
+				mode: 'fade'
+			});
+		});
+	</script>
 </body>
 </html>
