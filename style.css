@@ -53,6 +53,10 @@ p {
 	margin-right: 70px;
 }
 
+#tech-text {
+	clear: bottom;
+}
+
 #video {
 	height: auto;
 	max-width: 100%;
